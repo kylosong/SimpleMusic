@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: SimpleMusicPlayer
+productName: 自定义音乐播放器
+mac:
+  category: public.app-category.productivity
+linux:
+  target:
+    - AppImage
+    - deb
+win:
+  target:
+    - nsis
+    - zip
+  icon: build/icon.ico
+  publish:
+    - github
+electronVersion: 4.1.3
